@@ -1,0 +1,154 @@
+/* Global Rules */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* overflow: hidden; */
+}
+
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Global Rules */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-div {
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.parent-div h1 {
+    text-align: center;
+    letter-spacing: -.5px;
+    padding: 25px 0;
+    border-bottom: 1px solid silver;
+}
+
+.parent-div form {
+    padding: 45px 30px 30px;
+    height: fit-content;
+}
+
+.parent-div form .main_input {
+    padding: 6px;
+    border: none;
+    border-bottom: 1.5px solid #adadad;
+    margin-bottom: 33px;
+    width: 100%;
+    caret-color: #2980b9;
+}
+
+.parent-div form .main_input:focus {
+    outline: none;
+}
+
+.parent-div form .main_input::placeholder {
+    letter-spacing: .5px;
+    color: #adadad;
+    transition: .3s;
+}
+
+.parent-div form .main_input:focus::placeholder {
+    opacity: 0;
+}
+
+.parent-div form .losted_pass {
+    display: block;
+    color: #adadad;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    transition: .3s;
+}
+
+.parent-div form .losted_pass:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.parent-div form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 13.5px 60px;
+    color: #fff;
+    background-color: #2690d9;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.parent-div form input[type="submit"]:hover {
+    background-color: #111;
+}
+
+.parent-div form .signup-link {
+    color: #2690d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.parent-div form .signup-link a {
+    text-decoration: none;
+    color: #777;
+    transition: .3s;
+}
+
+.parent-div form .signup-link a :hover {
+    color: #2690d9;
+    text-align: center;
+}
+
+.parent-div form .signup-link span {
+    display: inline-block;
+}
+
+.parent-div form .signup-link span:hover {
+    text-decoration: underline;
+    color: blue;
+}
